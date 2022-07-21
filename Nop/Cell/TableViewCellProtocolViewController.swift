@@ -44,14 +44,14 @@ class TableViewCellProtocolViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let data = dataSource[indexPath.row]
         let cellType = data.cellType
-        return cellType.cellHeight(in: tableView.bounds.width, context: nil)
+        return cellType.cellHeight(in: tableView.bounds.width, data: data, context: nil)
     }
 
 }
 
 extension TableViewCellProtocolViewController: TableViewCellActionProcessable {
     func onCellActionHandler(_ thisCell: BaseTableViewCell, _ sender: Any?, _ context: [String : Any]?) {
-        print("sender \(sender)")
+        print("sender \(thisCell)")
     }
 }
 

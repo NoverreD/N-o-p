@@ -9,6 +9,7 @@ import UIKit
 public typealias BaseTableViewCell = UITableViewCell & BaseTableViewCellProtocol
 public protocol BaseTableViewCellDataProtocol: BaseCellDataProtocol {
     var cellType: BaseTableViewCell.Type { get }
+    var reuseIdentifier: String { get }
 }
 
 extension BaseTableViewCellDataProtocol {
@@ -19,14 +20,14 @@ extension BaseTableViewCellDataProtocol {
 
 public protocol BaseTableCellProtocol {
     static var reuseIdentifier: String { get }
-    static func cellHeight(in width: CGFloat, context: [String: Any]?) -> CGFloat
+    static func cellHeight(in width: CGFloat, data: BaseTableViewCellDataProtocol?, context: [String: Any]?) -> CGFloat
 }
 
 extension BaseTableCellProtocol {
     public static var reuseIdentifier: String {
         return "\(Self.self)"
     }
-    public static func cellHeight(in width: CGFloat, context: [String: Any]?) -> CGFloat {
+    public static func cellHeight(in width: CGFloat, data: BaseTableViewCellDataProtocol?, context: [String: Any]?) -> CGFloat {
         return UITableView.automaticDimension
     }
 }
