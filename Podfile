@@ -8,6 +8,8 @@ target 'Nop' do
   pod 'SDWebImage', :modular_headers => true
   pod 'Kingfisher', '~> 7.0'
   pod 'SwiftyJSON'
+  pod 'LookinServer', :configurations => ['Debug']
+
 #  pod 'Reveal-SDK', '24', :configurations => ['Debug']
 
   # Pods for Nop

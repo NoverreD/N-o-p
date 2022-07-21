@@ -66,16 +66,16 @@ extension CVCellSizeViewController: UICollectionViewDelegateFlowLayout, UICollec
     
 }
 
-private class CollectionViewFlowLayout: UICollectionViewFlowLayout {
-    override func invalidationContext(forBoundsChange newBounds: CGRect) -> UICollectionViewLayoutInvalidationContext {
-        let context = super.invalidationContext(forBoundsChange: newBounds)
-        guard let flowLayoutInvalidationContext = context as? UICollectionViewFlowLayoutInvalidationContext,
-              let cv = collectionView else {
-            return context
-        }
-        flowLayoutInvalidationContext.invalidateFlowLayoutDelegateMetrics = cv.bounds.size != newBounds.size
-        return flowLayoutInvalidationContext
-    }
+//private class CollectionViewFlowLayout: UICollectionViewFlowLayout {
+//    override func invalidationContext(forBoundsChange newBounds: CGRect) -> UICollectionViewLayoutInvalidationContext {
+//        let context = super.invalidationContext(forBoundsChange: newBounds)
+//        guard let flowLayoutInvalidationContext = context as? UICollectionViewFlowLayoutInvalidationContext,
+//              let cv = collectionView else {
+//            return context
+//        }
+//        flowLayoutInvalidationContext.invalidateFlowLayoutDelegateMetrics = cv.bounds.size != newBounds.size
+//        return flowLayoutInvalidationContext
+//    }
     
 //    override func invalidationContext(forBoundsChange newBounds: CGRect) -> UICollectionViewLayoutInvalidationContext {
 //        let context = super.invalidationContext(forBoundsChange: newBounds)
@@ -97,4 +97,4 @@ private class CollectionViewFlowLayout: UICollectionViewFlowLayout {
 //        guard let collectionView = collectionView else { return false }
 //        return !newBounds.size.equalTo(collectionView.bounds.size)
 //    }
-}
+//}

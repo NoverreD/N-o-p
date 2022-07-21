@@ -1,5 +1,6 @@
 PODS:
   - Kingfisher (7.1.1)
+  - LookinServer (1.0.6)
   - SDWebImage (5.12.1):
     - SDWebImage/Core (= 5.12.1)
   - SDWebImage/Core (5.12.1)
@@ -8,6 +9,7 @@ PODS:
 
 DEPENDENCIES:
   - Kingfisher (~> 7.0)
+  - LookinServer
   - SDWebImage
   - SnapKit
   - SwiftyJSON
@@ -15,16 +17,18 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Kingfisher
+    - LookinServer
     - SDWebImage
     - SnapKit
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Kingfisher: f738f9c4a3415823b8e2985d10aa2d6a9f37bc4d
+  LookinServer: 18155b1e4a08213c236a1dd6b7ca52328a70a1e3
   SDWebImage: 4dc3e42d9ec0c1028b960a33ac6b637bb432207b
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: cc3446dc508ac194c05ce712b1cb769bb2a2fff7
+PODFILE CHECKSUM: 44caee79337d22f99f73b67159c3cdb2eba06af9
 
 COCOAPODS: 1.11.3

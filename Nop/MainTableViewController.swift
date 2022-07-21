@@ -10,6 +10,7 @@ import UIKit
 class MainTableViewController: UITableViewController {
 
     var dataSource: [UIViewController.Type] = [
+        CVLayoutViewController.self,
         EventViewController.self,
         LabelContainerViewController.self,
         ShadowViewController.self,

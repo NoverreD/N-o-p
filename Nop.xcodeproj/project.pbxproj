@@ -20,6 +20,9 @@
 		D0259CFD2722BEBD00E84D20 /* TransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0259CFC2722BEBD00E84D20 /* TransitionViewController.swift */; };
 		D0259CFF2722BECB00E84D20 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0259CFE2722BECB00E84D20 /* MainTableViewController.swift */; };
 		D0277B0D26D4ECAB00031CC1 /* TextViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0277B0C26D4ECAB00031CC1 /* TextViewViewController.swift */; };
+		D02DFD3A2888D109007C9619 /* CollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02DFD372888D109007C9619 /* CollectionViewFlowLayout.swift */; };
+		D02DFD3B2888D109007C9619 /* CVLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02DFD382888D109007C9619 /* CVLayoutViewController.swift */; };
+		D02DFD3C2888D109007C9619 /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02DFD392888D109007C9619 /* CollectionReusableView.swift */; };
 		D0319C41277059F0000CA8AE /* GifImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0319C40277059F0000CA8AE /* GifImageViewController.swift */; };
 		D03D189126A197D2007DAFAD /* ObserverHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03D189026A197D2007DAFAD /* ObserverHelper.swift */; };
 		D03D189326A19823007DAFAD /* SMJWeakObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03D189226A19823007DAFAD /* SMJWeakObject.swift */; };
@@ -39,7 +42,6 @@
 		D0A80D642726B894006AD177 /* SDWebImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A80D632726B894006AD177 /* SDWebImageViewController.swift */; };
 		D0A80D672728FB65006AD177 /* ForCacheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A80D662728FB65006AD177 /* ForCacheViewController.swift */; };
 		D0A80D69272949E1006AD177 /* ConcurrentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A80D68272949E1006AD177 /* ConcurrentViewController.swift */; };
-		D0B51897271D9EC0005ACCDF /* CVLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B51896271D9EC0005ACCDF /* CVLayoutViewController.swift */; };
 		D0B5A7CF26F5878A00CA9B30 /* KeyAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B5A7CE26F5878A00CA9B30 /* KeyAnimationViewController.swift */; };
 		D0B88A4326F0A2A4005161CF /* MyObj.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B88A4226F0A2A4005161CF /* MyObj.m */; };
 		D0BC3F5226FB25C000F534C7 /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BC3F5126FB25C000F534C7 /* LabelViewController.swift */; };
@@ -119,6 +121,9 @@
 		D0259CFC2722BEBD00E84D20 /* TransitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionViewController.swift; sourceTree = "<group>"; };
 		D0259CFE2722BECB00E84D20 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		D0277B0C26D4ECAB00031CC1 /* TextViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewViewController.swift; sourceTree = "<group>"; };
+		D02DFD372888D109007C9619 /* CollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		D02DFD382888D109007C9619 /* CVLayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVLayoutViewController.swift; sourceTree = "<group>"; };
+		D02DFD392888D109007C9619 /* CollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
 		D0319C40277059F0000CA8AE /* GifImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImageViewController.swift; sourceTree = "<group>"; };
 		D03D189026A197D2007DAFAD /* ObserverHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverHelper.swift; sourceTree = "<group>"; };
 		D03D189226A19823007DAFAD /* SMJWeakObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMJWeakObject.swift; sourceTree = "<group>"; };
@@ -140,7 +145,6 @@
 		D0A80D632726B894006AD177 /* SDWebImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDWebImageViewController.swift; sourceTree = "<group>"; };
 		D0A80D662728FB65006AD177 /* ForCacheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForCacheViewController.swift; sourceTree = "<group>"; };
 		D0A80D68272949E1006AD177 /* ConcurrentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrentViewController.swift; sourceTree = "<group>"; };
-		D0B51896271D9EC0005ACCDF /* CVLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVLayoutViewController.swift; sourceTree = "<group>"; };
 		D0B5A7CE26F5878A00CA9B30 /* KeyAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyAnimationViewController.swift; sourceTree = "<group>"; };
 		D0B88A4026F0A2A3005161CF /* Nop-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nop-Bridging-Header.h"; sourceTree = "<group>"; };
 		D0B88A4126F0A2A4005161CF /* MyObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyObj.h; sourceTree = "<group>"; };
@@ -217,6 +221,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D02DFD362888D109007C9619 /* CVLayoutView */ = {
+			isa = PBXGroup;
+			children = (
+				D02DFD372888D109007C9619 /* CollectionViewFlowLayout.swift */,
+				D02DFD382888D109007C9619 /* CVLayoutViewController.swift */,
+				D02DFD392888D109007C9619 /* CollectionReusableView.swift */,
+			);
+			path = CVLayoutView;
+			sourceTree = "<group>";
+		};
 		D0A80D652728FB2F006AD177 /* Cache */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +263,7 @@
 		D0FD11FB2668676500419A85 /* Nop */ = {
 			isa = PBXGroup;
 			children = (
+				D02DFD362888D109007C9619 /* CVLayoutView */,
 				D0A80D652728FB2F006AD177 /* Cache */,
 				D02585BD271192F00077F8B2 /* SDAsyncBlockOperation.h */,
 				D02585BE271192F00077F8B2 /* SDAsyncBlockOperation.m */,
@@ -281,7 +296,6 @@
 				D0BC3F5126FB25C000F534C7 /* LabelViewController.swift */,
 				D0BC3F5326FC303F00F534C7 /* CollectionViewViewController.swift */,
 				D04F844526FD794C006F4923 /* FileManagerViewController.swift */,
-				D0B51896271D9EC0005ACCDF /* CVLayoutViewController.swift */,
 				D081BEE92721193700128C10 /* LabelImageViewController.swift */,
 				D05D6074272148070063C906 /* FontViewController.swift */,
 				D0259CFA2722B94400E84D20 /* LayoutGuideViewController.swift */,
@@ -507,7 +521,6 @@
 				D00CF4E42688A28E00F0240C /* CIViewController.swift in Sources */,
 				D0A80D69272949E1006AD177 /* ConcurrentViewController.swift in Sources */,
 				D049F5A726A9030900EFF68C /* LabelContainerViewController.swift in Sources */,
-				D0B51897271D9EC0005ACCDF /* CVLayoutViewController.swift in Sources */,
 				D0259CFF2722BECB00E84D20 /* MainTableViewController.swift in Sources */,
 				D0A80D642726B894006AD177 /* SDWebImageViewController.swift in Sources */,
 				D003164027749257008A05CA /* BoxViewController.swift in Sources */,
@@ -522,8 +535,10 @@
 				D0D8F98527C372B600C92DAE /* ScrollViewDidScrollViewController.swift in Sources */,
 				D003164227749D22008A05CA /* Box2ViewController.swift in Sources */,
 				D06CB9902769CA6C003548E5 /* XattrViewController.swift in Sources */,
+				D02DFD3B2888D109007C9619 /* CVLayoutViewController.swift in Sources */,
 				D0BC3F5226FB25C000F534C7 /* LabelViewController.swift in Sources */,
 				D08F22A827E2D72D0085A42C /* StringRaceViewController.swift in Sources */,
+				D02DFD3A2888D109007C9619 /* CollectionViewFlowLayout.swift in Sources */,
 				D0DEB0D72746645700BC0853 /* TableViewController.swift in Sources */,
 				D0319C41277059F0000CA8AE /* GifImageViewController.swift in Sources */,
 				D03D189826A46B4F007DAFAD /* OneNHelper.swift in Sources */,
@@ -540,6 +555,7 @@
 				D081BEEA2721193700128C10 /* LabelImageViewController.swift in Sources */,
 				D0D8F98127BFB88400C92DAE /* CVCellSizeViewController.swift in Sources */,
 				D03D189126A197D2007DAFAD /* ObserverHelper.swift in Sources */,
+				D02DFD3C2888D109007C9619 /* CollectionReusableView.swift in Sources */,
 				D03D189326A19823007DAFAD /* SMJWeakObject.swift in Sources */,
 				D0DECFF326DE312C00D09263 /* ButtonViewController.swift in Sources */,
 				D0BE212F27D5F24100D6B710 /* ARCViewController.swift in Sources */,
