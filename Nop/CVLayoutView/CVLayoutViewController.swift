@@ -27,10 +27,8 @@ class CVLayoutViewController: UIViewController {
     
 
     lazy var collectView: UICollectionView = {
-        let layout = CollectionViewFlowLayout()
+        let layout = HeaderCollectionViewFlowLayout()
         layout.minimumInteritemSpacing = 10
-        layout.registerExtendDecorationView(CollectionExtendReusableView.self)
-        layout.registerFoldDecorationView(CollectionFoldReusableView.self)
         layout.sectionHeadersPinToVisibleBounds = true
         let temp = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
         temp.register(LabelCollectionViewCell.self, forCellWithReuseIdentifier: Self.cellReuseIdentifier)
@@ -38,6 +36,18 @@ class CVLayoutViewController: UIViewController {
         temp.dataSource = self
         temp.delegate = self
         temp.backgroundColor = UIColor.white
+        return temp
+    }()
+    
+    lazy var extendView: UIView = {
+        let temp = UIView()
+        temp.backgroundColor = UIColor.red
+        return temp
+    }()
+    
+    lazy var foldView: UIView = {
+        let temp = UIView()
+        temp.backgroundColor = UIColor.blue
         return temp
     }()
 }
@@ -60,14 +70,14 @@ extension CVLayoutViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if let temp = collectionView.collectionViewLayout as? CollectionViewFlowLayout {
-            let style: CollectionViewFlowLayout.HeaderStyle = temp.currentStyle == .extend ? .fold : .extend
+        if let temp = collectionView.collectionViewLayout as? HeaderCollectionViewFlowLayout {
+            let style: HeaderCollectionViewFlowLayout.HeaderStyle = temp.currentStyle == .extend ? .fold : .extend
             temp.updateStyleIfNeed(style)
         }
     }
 }
 
-extension CVLayoutViewController: CollectionViewFlowLayoutDelegate {
+extension CVLayoutViewController: HeaderCollectionViewFlowLayoutDelegate {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: dataSource[indexPath.item].width, height: 50)
     }
@@ -89,12 +99,21 @@ extension CVLayoutViewController: CollectionViewFlowLayoutDelegate {
         return CGSize(width: 100, height: 50)
     }
     
-    func collectionViewFlowLayout(_ layout: CollectionViewFlowLayout, headerHeightForStyle style: CollectionViewFlowLayout.HeaderStyle) -> CGFloat {
+    func headerCollectionViewFlowLayout(_ layout: HeaderCollectionViewFlowLayout, headerHeightForStyle style: HeaderCollectionViewFlowLayout.HeaderStyle) -> CGFloat {
         switch style {
         case .fold:
             return 50
         case .extend:
             return 200
+        }
+    }
+    
+    func headerCollectionViewFlowLayout(_ layout: HeaderCollectionViewFlowLayout, contentViewForStyle style: HeaderCollectionViewFlowLayout.HeaderStyle) -> UIView? {
+        switch style {
+        case .fold:
+            return foldView
+        case .extend:
+            return extendView
         }
     }
 }

@@ -20,7 +20,7 @@
 		D0259CFD2722BEBD00E84D20 /* TransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0259CFC2722BEBD00E84D20 /* TransitionViewController.swift */; };
 		D0259CFF2722BECB00E84D20 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0259CFE2722BECB00E84D20 /* MainTableViewController.swift */; };
 		D0277B0D26D4ECAB00031CC1 /* TextViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0277B0C26D4ECAB00031CC1 /* TextViewViewController.swift */; };
-		D02DFD3A2888D109007C9619 /* CollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02DFD372888D109007C9619 /* CollectionViewFlowLayout.swift */; };
+		D02DFD3A2888D109007C9619 /* HeaderCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02DFD372888D109007C9619 /* HeaderCollectionViewFlowLayout.swift */; };
 		D02DFD3B2888D109007C9619 /* CVLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02DFD382888D109007C9619 /* CVLayoutViewController.swift */; };
 		D02DFD3C2888D109007C9619 /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02DFD392888D109007C9619 /* CollectionReusableView.swift */; };
 		D0319C41277059F0000CA8AE /* GifImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0319C40277059F0000CA8AE /* GifImageViewController.swift */; };
@@ -121,7 +121,7 @@
 		D0259CFC2722BEBD00E84D20 /* TransitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionViewController.swift; sourceTree = "<group>"; };
 		D0259CFE2722BECB00E84D20 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		D0277B0C26D4ECAB00031CC1 /* TextViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewViewController.swift; sourceTree = "<group>"; };
-		D02DFD372888D109007C9619 /* CollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		D02DFD372888D109007C9619 /* HeaderCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		D02DFD382888D109007C9619 /* CVLayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVLayoutViewController.swift; sourceTree = "<group>"; };
 		D02DFD392888D109007C9619 /* CollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
 		D0319C40277059F0000CA8AE /* GifImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImageViewController.swift; sourceTree = "<group>"; };
@@ -224,7 +224,7 @@
 		D02DFD362888D109007C9619 /* CVLayoutView */ = {
 			isa = PBXGroup;
 			children = (
-				D02DFD372888D109007C9619 /* CollectionViewFlowLayout.swift */,
+				D02DFD372888D109007C9619 /* HeaderCollectionViewFlowLayout.swift */,
 				D02DFD382888D109007C9619 /* CVLayoutViewController.swift */,
 				D02DFD392888D109007C9619 /* CollectionReusableView.swift */,
 			);
@@ -538,7 +538,7 @@
 				D02DFD3B2888D109007C9619 /* CVLayoutViewController.swift in Sources */,
 				D0BC3F5226FB25C000F534C7 /* LabelViewController.swift in Sources */,
 				D08F22A827E2D72D0085A42C /* StringRaceViewController.swift in Sources */,
-				D02DFD3A2888D109007C9619 /* CollectionViewFlowLayout.swift in Sources */,
+				D02DFD3A2888D109007C9619 /* HeaderCollectionViewFlowLayout.swift in Sources */,
 				D0DEB0D72746645700BC0853 /* TableViewController.swift in Sources */,
 				D0319C41277059F0000CA8AE /* GifImageViewController.swift in Sources */,
 				D03D189826A46B4F007DAFAD /* OneNHelper.swift in Sources */,
