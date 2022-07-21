@@ -19,6 +19,11 @@
 		D0259CFB2722B94400E84D20 /* LayoutGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0259CFA2722B94400E84D20 /* LayoutGuideViewController.swift */; };
 		D0259CFD2722BEBD00E84D20 /* TransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0259CFC2722BEBD00E84D20 /* TransitionViewController.swift */; };
 		D0259CFF2722BECB00E84D20 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0259CFE2722BECB00E84D20 /* MainTableViewController.swift */; };
+		D0269F5128893B0800E60B6A /* TableViewCellProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0269F5028893B0800E60B6A /* TableViewCellProtocols.swift */; };
+		D0269F53288944D400E60B6A /* TableViewCellProtocolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0269F52288944D400E60B6A /* TableViewCellProtocolViewController.swift */; };
+		D0269F5528894A2900E60B6A /* CollectionViewCellProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0269F5428894A2900E60B6A /* CollectionViewCellProtocols.swift */; };
+		D0269F5728894A7B00E60B6A /* BaseCellProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0269F5628894A7B00E60B6A /* BaseCellProtocols.swift */; };
+		D0269F5928894C0A00E60B6A /* CollectionViewCellProtocolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0269F5828894C0A00E60B6A /* CollectionViewCellProtocolViewController.swift */; };
 		D0277B0D26D4ECAB00031CC1 /* TextViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0277B0C26D4ECAB00031CC1 /* TextViewViewController.swift */; };
 		D02DFD3A2888D109007C9619 /* HeaderCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02DFD372888D109007C9619 /* HeaderCollectionViewFlowLayout.swift */; };
 		D02DFD3B2888D109007C9619 /* CVLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02DFD382888D109007C9619 /* CVLayoutViewController.swift */; };
@@ -120,6 +125,11 @@
 		D0259CFA2722B94400E84D20 /* LayoutGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutGuideViewController.swift; sourceTree = "<group>"; };
 		D0259CFC2722BEBD00E84D20 /* TransitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionViewController.swift; sourceTree = "<group>"; };
 		D0259CFE2722BECB00E84D20 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		D0269F5028893B0800E60B6A /* TableViewCellProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellProtocols.swift; sourceTree = "<group>"; };
+		D0269F52288944D400E60B6A /* TableViewCellProtocolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellProtocolViewController.swift; sourceTree = "<group>"; };
+		D0269F5428894A2900E60B6A /* CollectionViewCellProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellProtocols.swift; sourceTree = "<group>"; };
+		D0269F5628894A7B00E60B6A /* BaseCellProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCellProtocols.swift; sourceTree = "<group>"; };
+		D0269F5828894C0A00E60B6A /* CollectionViewCellProtocolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellProtocolViewController.swift; sourceTree = "<group>"; };
 		D0277B0C26D4ECAB00031CC1 /* TextViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewViewController.swift; sourceTree = "<group>"; };
 		D02DFD372888D109007C9619 /* HeaderCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		D02DFD382888D109007C9619 /* CVLayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVLayoutViewController.swift; sourceTree = "<group>"; };
@@ -221,6 +231,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D0269F4F28893AFA00E60B6A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D0269F52288944D400E60B6A /* TableViewCellProtocolViewController.swift */,
+				D0269F5028893B0800E60B6A /* TableViewCellProtocols.swift */,
+				D0269F5428894A2900E60B6A /* CollectionViewCellProtocols.swift */,
+				D0269F5628894A7B00E60B6A /* BaseCellProtocols.swift */,
+				D0269F5828894C0A00E60B6A /* CollectionViewCellProtocolViewController.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		D02DFD362888D109007C9619 /* CVLayoutView */ = {
 			isa = PBXGroup;
 			children = (
@@ -263,6 +285,7 @@
 		D0FD11FB2668676500419A85 /* Nop */ = {
 			isa = PBXGroup;
 			children = (
+				D0269F4F28893AFA00E60B6A /* Cell */,
 				D02DFD362888D109007C9619 /* CVLayoutView */,
 				D0A80D652728FB2F006AD177 /* Cache */,
 				D02585BD271192F00077F8B2 /* SDAsyncBlockOperation.h */,
@@ -510,11 +533,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0269F5528894A2900E60B6A /* CollectionViewCellProtocols.swift in Sources */,
 				D0895D6127F71777000195C0 /* ShadowViewController.swift in Sources */,
 				D091707A27D324AE007113FD /* OCViewController.m in Sources */,
 				D013943B26E0C54400FB7391 /* OperationViewController.swift in Sources */,
+				D0269F5728894A7B00E60B6A /* BaseCellProtocols.swift in Sources */,
 				D05D6075272148070063C906 /* FontViewController.swift in Sources */,
 				D0F0537827C8AB0100695A25 /* FontLeadingViewController.swift in Sources */,
+				D0269F5128893B0800E60B6A /* TableViewCellProtocols.swift in Sources */,
 				D003165027796A34008A05CA /* TempViewController.swift in Sources */,
 				D0B5A7CF26F5878A00CA9B30 /* KeyAnimationViewController.swift in Sources */,
 				D0BC3F5426FC303F00F534C7 /* CollectionViewViewController.swift in Sources */,
@@ -537,12 +563,14 @@
 				D06CB9902769CA6C003548E5 /* XattrViewController.swift in Sources */,
 				D02DFD3B2888D109007C9619 /* CVLayoutViewController.swift in Sources */,
 				D0BC3F5226FB25C000F534C7 /* LabelViewController.swift in Sources */,
+				D0269F53288944D400E60B6A /* TableViewCellProtocolViewController.swift in Sources */,
 				D08F22A827E2D72D0085A42C /* StringRaceViewController.swift in Sources */,
 				D02DFD3A2888D109007C9619 /* HeaderCollectionViewFlowLayout.swift in Sources */,
 				D0DEB0D72746645700BC0853 /* TableViewController.swift in Sources */,
 				D0319C41277059F0000CA8AE /* GifImageViewController.swift in Sources */,
 				D03D189826A46B4F007DAFAD /* OneNHelper.swift in Sources */,
 				D0FAC4B6274D093500C5C551 /* IntrinsicContentSizeViewController.swift in Sources */,
+				D0269F5928894C0A00E60B6A /* CollectionViewCellProtocolViewController.swift in Sources */,
 				D0F2E342273D3774009ED218 /* NewCacheViewController.swift in Sources */,
 				D003163127736A18008A05CA /* PropertyWrapperViewController.swift in Sources */,
 				D0FAC4B8274D0F5000C5C551 /* ContentLayoutGuideViewController.swift in Sources */,

@@ -10,6 +10,8 @@ import UIKit
 class MainTableViewController: UITableViewController {
 
     var dataSource: [UIViewController.Type] = [
+        CollectionViewCellProtocolViewController.self,
+        TableViewCellProtocolViewController.self,
         CVLayoutViewController.self,
         EventViewController.self,
         LabelContainerViewController.self,
@@ -78,7 +80,14 @@ class MainTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = (dataSource[indexPath.row]).init()
+        let vcType = dataSource[indexPath.row]
+        if vcType == CollectionViewCellProtocolViewController.self {
+            let vc = CollectionViewCellProtocolViewController(collectionViewLayout: UICollectionViewFlowLayout())
+            vc.view.backgroundColor = UIColor.white
+            show(vc, sender: nil)
+            return
+        }
+        let vc = vcType.init()
         vc.view.backgroundColor = UIColor.white
         show(vc, sender: nil)
     }
