@@ -234,10 +234,10 @@
 		D0269F4F28893AFA00E60B6A /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				D0269F52288944D400E60B6A /* TableViewCellProtocolViewController.swift */,
+				D0269F5628894A7B00E60B6A /* BaseCellProtocols.swift */,
 				D0269F5028893B0800E60B6A /* TableViewCellProtocols.swift */,
 				D0269F5428894A2900E60B6A /* CollectionViewCellProtocols.swift */,
-				D0269F5628894A7B00E60B6A /* BaseCellProtocols.swift */,
+				D0269F52288944D400E60B6A /* TableViewCellProtocolViewController.swift */,
 				D0269F5828894C0A00E60B6A /* CollectionViewCellProtocolViewController.swift */,
 			);
 			path = Cell;

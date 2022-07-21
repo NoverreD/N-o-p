@@ -7,21 +7,33 @@
 
 import UIKit
 
-struct CellHelper {
+public struct CellHelper {
     ///TableView
-    struct TB {
-        typealias Cell = BaseTableViewCell
-        typealias Data = BaseTableViewCellDataProtocol
+    public struct TB {
+        public typealias Cell = BaseTableViewCell
+        public typealias Data = BaseTableViewCellDataProtocol
+        public typealias Handler = TableViewCellActionProcessable
     }
     ///CollectionView
-    struct CV {
-        typealias Cell = BaseCollectionViewCell
-        typealias Data = BaseCollectionViewCellDataProtocol
+    public struct CV {
+        public typealias Cell = BaseCollectionViewCell
+        public typealias Data = BaseCollectionViewCellDataProtocol
+        public typealias Handler = CollectionViewCellActionProcessable
     }
 }
 
 public protocol BaseCellDataProtocol {
     var reuseIdentifier: String { get }
+}
+
+public protocol BaseCellProtocol {
+    static var reuseIdentifier: String { get }
+}
+
+extension BaseCellProtocol {
+    public static var reuseIdentifier: String {
+        return "\(Self.self)"
+    }
 }
 
 public typealias CellActionHandler<CellProtocol> = (_ thisCell: CellProtocol

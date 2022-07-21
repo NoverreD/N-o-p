@@ -87,7 +87,7 @@ extension TableViewCellProtocolViewController {
             }
         }
         
-        static func cellHeight(in width: CGFloat, context: [String : Any]?) -> CGFloat {
+        static func cellHeight(in width: CGFloat, data: BaseTableViewCellDataProtocol?, context: [String : Any]?) -> CGFloat {
             return 100
         }
     }
@@ -106,7 +106,7 @@ extension TableViewCellProtocolViewController {
             }
         }
         
-        static func cellHeight(in width: CGFloat, context: [String : Any]?) -> CGFloat {
+        static func cellHeight(in width: CGFloat, data: BaseTableViewCellDataProtocol?, context: [String : Any]?) -> CGFloat {
             return 30
         }
     }
@@ -125,7 +125,7 @@ extension TableViewCellProtocolViewController {
             }
         }
         
-        static func cellHeight(in width: CGFloat, context: [String : Any]?) -> CGFloat {
+        static func cellHeight(in width: CGFloat, data: BaseTableViewCellDataProtocol?, context: [String : Any]?) -> CGFloat {
             return 40
         }
     }

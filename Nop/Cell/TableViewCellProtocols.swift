@@ -9,7 +9,6 @@ import UIKit
 public typealias BaseTableViewCell = UITableViewCell & BaseTableViewCellProtocol
 public protocol BaseTableViewCellDataProtocol: BaseCellDataProtocol {
     var cellType: BaseTableViewCell.Type { get }
-    var reuseIdentifier: String { get }
 }
 
 extension BaseTableViewCellDataProtocol {
@@ -18,28 +17,19 @@ extension BaseTableViewCellDataProtocol {
     }
 }
 
-public protocol BaseTableCellProtocol {
-    static var reuseIdentifier: String { get }
-    static func cellHeight(in width: CGFloat, data: BaseTableViewCellDataProtocol?, context: [String: Any]?) -> CGFloat
-}
-
-extension BaseTableCellProtocol {
-    public static var reuseIdentifier: String {
-        return "\(Self.self)"
-    }
-    public static func cellHeight(in width: CGFloat, data: BaseTableViewCellDataProtocol?, context: [String: Any]?) -> CGFloat {
-        return UITableView.automaticDimension
-    }
-}
-
-public protocol BaseTableViewCellProtocol: BaseTableCellProtocol where Self: UITableViewCell {
+public protocol BaseTableViewCellProtocol: BaseCellProtocol where Self: UITableViewCell {
     func reload(with data: BaseTableViewCellDataProtocol)
     var actionHandler: CellActionHandler<BaseTableViewCellProtocol>? { get set }
+    static func cellHeight(in width: CGFloat, data: BaseTableViewCellDataProtocol?, context: [String: Any]?) -> CGFloat
 }
 
 extension BaseTableViewCellProtocol {
     public func callActionHandler(sender: Any? ,context: [String: Any]?) {
         actionHandler?(self, sender, context)
+    }
+    
+    public static func cellHeight(in width: CGFloat, data: BaseTableViewCellDataProtocol?, context: [String: Any]?) -> CGFloat {
+        return UITableView.automaticDimension
     }
     
     var actionHandler: CellActionHandler<BaseTableViewCellProtocol>? {

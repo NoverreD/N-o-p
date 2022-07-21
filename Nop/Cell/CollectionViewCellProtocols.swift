@@ -17,7 +17,7 @@ extension BaseCollectionViewCellDataProtocol {
     }
 }
 
-public protocol BaseCollectionViewCellProtocol: BaseTableCellProtocol where Self: UICollectionViewCell {
+public protocol BaseCollectionViewCellProtocol: BaseCellProtocol where Self: UICollectionViewCell {
     func reload(with data: BaseCollectionViewCellDataProtocol)
     var actionHandler: CellActionHandler<BaseCollectionViewCellProtocol>? { get set }
 }
